@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement Licence Point</title>
+    <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+    <div class="logo-container">
+        <div class="point_white"></div>
+        <h1 class="site-title">Point</h1>
+    </div>
+
+    <div class="container">
+        <h1>Achat de Licence Point</h1>
+        <form id="payment-form">
+            <div class="input-group">
+                <label for="name">Nom Complet</label>
+                <input type="text" id="name" placeholder="Votre nom complet" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" placeholder="Votre e-mail" required>
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Numéro de téléphone (Orange Money)</label>
+                <input type="tel" id="phone" placeholder="Votre numéro de téléphone" required>
+            </div>
+
+            <div class="input-group">
+                <label for="amount">Montant du paiement</label>
+                <select id="amount" required>
+                    <option value="" disabled selected>Choisissez une option</option>
+                    <option value="12000">12,000 XOF - Licence d'un mois</option>
+                    <option value="50000">50,000 XOF - Licence d'un an</option>
+                </select>
+            </div>
+
+            <p class="instructions">
+                Veuillez envoyer le montant sélectionné au <b style="background-color: black; color: white;"> +223 90 74 37 03 </b> via Orange Money. Une fois le paiement effectué, entrez le numéro de transaction ci-dessous pour valider votre commande.
+            </p>
+
+            <div class="input-group">
+                <label for="transaction-number">Numéro de Transaction</label>
+                <input type="text" id="transaction-number" placeholder="Numéro de transaction reçu par SMS" required>
+            </div>
+
+            <button type="submit">Valider le Paiement</button>
+            
+    <div class="orange-money-logo">
+        <img src="https://dimelo-answers-production.s3-eu-west-1.amazonaws.com/268/6f44dfa59e0bcf0b/om_logo_original.png?09c0932" alt="Logo Orange Money">
+    </div>
+        </form>
+    </div>
+    <footer>
+        <p>© 2024 Point. Tous droits réservés.</p>
+        <p><a href="policy.html">Politique de confidentialité</a> | <a href="conditions.html">Conditions Générales</a></p>
+    </footer>
+   
+    <script type="module" src="pay.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un compte - Point</title>
+    <link rel="icon" type="image/jpeg" href="assets/icon/logo.jpeg">
+    
+</script>
+
+    <link rel="stylesheet" href="index.css">
+    <script src="xecure.js"></script>
+    
+
+    <style>
+        body, h1, h2, p, button {
+            margin: 0;
+              padding: 0;
+            font-family: Arial, sans-serif;}
+        
+        body {
+
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .header {
+            
+            background: #000000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            
+            justify-content: center;}
+        
+        .logo {
+            width: 50px;
+            height: 50px;
+            background: #fff;
+
+    
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .site-title {
+            font-size: 24px;
+            margin: 0;
+        }
+        
+        .nav {
+            margin-top: 10px;
+        }
+        
+        .nav a {
+    
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .signup-section {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+    
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        
+        .section-title {
+            font-size: 28px;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            color: #353535;
+            border-radius: 0px;
+            border: 2px solid #000000;
+            margin-top: 8px;
+            font-size: 17px;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+        
+        input[type="checkbox"] {
+            margin-right: 10px;
+    
+        }
+        
+        .btn-signup, .btn-animated {
+            background-color: #ffffff;
+            color: #000000;
+    
+            border: 2px solid #6e6e6e;
+            padding: 15px 25px;
+    
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        
+        .btn-signup:hover, .btn-animated:hover {
+            background-color: #353535;
+            transform: scale(1.05);
+        }
+        
+        .btn-disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+            border-radius: 0px;
+            border: 2px solid black;
+        }
+        
+        .hidden {
+            display: none;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 15px;
+            }
+
+            .btn-signup, .btn-animated {
+                padding: 10px 20px;
+    
+            }
+
+            .signup-section {
+                padding: 20px;    }
+        }
+        label{
+            color: #353535;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <div class="logo"></div>
+            <h1 class="site-title">Point</h1>
+        </div>
+        
+        <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="license.html">Licences</a>
+            <a href="download.html">Télécharger</a>
+            <a href="signup.html">Créer un compte</a>
+            <a href="search.html">Trouver mon école</a>
+            <a href="./app/signin.html">Gérer mon école</a>
+        </nav>
+    </header>
+    <section id="signup-form" class="signup-section">
+        <h2 class="section-title">Créer un compte</h2>
+        <form id="signup" class="form" >
+            <div class="form-group">
+                <label for="email">Adresse e-mail :</label>
+    
+
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+
+                <label for="confirm-password">Confirmer le mot de passe :</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+    
+            <button type="submit" class="btn-animated">Créer un compte</button>
+        </form>
+    </section>
+
+    <section id="confirmation" class="signup-section hidden">
+        <h2 class="section-title">Compte créé avec succès !</h2>
+        
+        <p style="color: #6e6e6e;">Nous avons téléchargé un fichier PDF contenant vos informations de connexion. Consultez-le pour accéder à votre mot de passe et à votre adresse email.</p>
+        <br>
+        <br>
+        <a style="margin-top: 100px;" href="download.html" class="btn-animated">Télécharger l'application Android</a>
+    </section>
+    
+    <footer class="footer" style="margin-top: 100px;">
+        <div class="footer-content">
+        
+            <div class="footer-logo" style="display: flex; justify-content: center; align-items: center; margin-left: 3px;">
+                <div class="point_white"></div>
+                <h3>Point</h3>
+        
+            </div>
+            <nav class="footer-nav">
+                <a href="policy.html">Politique de confidentialité</a>
+                <a href="conditions.html">Conditions générales</a>
+            </nav>
+        
+            <p class="copyright">&copy; 2024 Point - Tous droits réservés</p>
+        </div>
+    </footer>
+
+
+    <script src="libs/pdfmake.min.js"></script>
+    <script src="libs/vfs_fonts.js"></script>
+    <script src="signup.js"  type="module"></script>
+</body>
+</html>

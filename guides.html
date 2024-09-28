@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide d'utilisation - Point</title>
+    <link rel="stylesheet" href="search.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .banner {
+            background-color: #e0e0e0;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #000;
+            color: white;
+        }
+
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            color: #00e5ff;
+        }
+
+        .guide-section {
+            padding: 50px;
+            background-color: white;
+        }
+
+        .guide-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .guide-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .guide-text {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .guide-text h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .guide-text p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .guide-image {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .guide-image img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+        }
+
+        .footer {
+            background-color: #000;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .footer-nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .footer-nav a:hover {
+            color: #00e5ff;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .guide-item {
+                flex-direction: column;
+            }
+
+            .guide-item:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .guide-text, .guide-image {
+                padding: 10px;
+            }
+
+            .guide-text h3 {
+                font-size: 20px;
+            }
+
+            .guide-text p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <p>Point : Gestion scolaire avancée - Protégez vos données avec des mises à jour de sécurité mensuelles</p>
+    </div>
+
+    <header class="header">
+        <h1>Point - Guide d'utilisation</h1>
+            
+     
+        <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="license.html">Licences</a>
+            <a href="download.html">Télécharger</a>
+            <a href="signup.html">Créer un compte</a>
+            <a href="search.html">Trouver mon école</a>
+            <a href="./app/signin.html">Gérer mon école</a>
+            <a href="guides.html">Guide administrateur</a>        
+        </nav>
+    </header>
+
+    <section class="guide-section">
+        <!-- Guide item 1 -->
+
+        <h1 style="justify-content: center; text-align: center; font-size: 40px; margin-bottom: 20px;">Adaministration - Direction</h1>
+    
+        <div style="height: 5px; width: 200px; text-align: center; background-color: #000;"></div>
+        <div class="guide-item">
+            <div class="guide-text">
+                <h3>Étape 1 : Inscription sur le site Point</h3>
+                <p>Pour commencer, inscrivez-vous sur le site Point en fournissant votre adresse e-mail et un mot de passe sécurisé. Cette étape est essentielle pour créer votre compte administrateur.</p>
+            </div>
+            <div class="guide-image">
+                <img src="./assets/guides/admin_signup.jpg" alt="Inscription">
+            </div>
+        </div>
+
+        <!-- Guide item 2 -->
+        <div class="guide-item">
+            <div class="guide-text">
+                <h3>Étape 2 : Connxion à l'application Point</h3>
+                <p>Une fois crée, l'étape suivante consiste à télécharger l'application <a href="download.html">PointGS</a> et de procéder à la connexion pour continuer.</p>
+            </div>
+            <div class="guide-image">
+                <img src="/assets/guides/phoneWelcomepage.jpg" width="280px" alt="Ajouter une école">
+                <img src="/assets/guides/phoneloginPage.jpg" width="280px" alt="Ajouter une école">
+            </div>
+        </div>
+
+        <!-- Guide item 3 -->
+        <div class="guide-item">
+            <div class="guide-text">
+                <h3>Étape 3 : Trouver votre école dans la liste des lycées Bamako (Rive gauche, droite). Cela ira vers une verification futur</h3>
+                <p>Pour une securité plus robuste. Point à décidé d'utiliser le données existante depuis sa base de donnée, si vous ne parvenez pas à retrouver votre école vous pouvez faire une demande d'ajout de votre établissement sur la base de donnée. En général, cela ne prend pas plus de 3 jours. cliquez sur les trois point verticaux en haut <img src="https://www.svgrepo.com/show/513840/more-vertical.svg" height="20px"></p>
+            </div>
+            <div class="guide-image">
+                <img src="/assets/guides/armoirie.jpg" width="280px" alt="Créer des classes">
+            </div>
+        </div>
+
+        <!-- Guide item 4 -->
+        <div class="guide-item">
+            <div class="guide-text">
+                <h3>Étape 4 : Interface de l'application Point</h3>
+                <p>Une fois que vous avez complété la création de votre compte, il est essentiel d'accomplir le reste du processus, y compris l'ajout du logo, des classes, et des informations sur les élèves. Actuellement, Point est en développement, et les actions de l'administration sont limitées. Des mises à jour régulières sont effectuées chaque mois pour améliorer l'application. La barre de progression atteindra 100 % lorsque la fonctionnalité du serveur Bibliothèque Technique sera disponible. Restez à l'affût pour des améliorations continues et des fonctionnalités à venir !</p>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Point</h3>
+            </div>
+            <nav class="footer-nav">
+                <a href="policy.html">Politique de confidentialité</a>
+                <a href="conditions.html">Conditions générales</a>
+            </nav>
+            <p>&copy; 2024 Point - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,227 @@
+.signup-section {
+
+
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.hidden {
+    display: none;}
+
+.btn-signup {
+    background-color: #00e5ff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-signup:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.btn-signup:hover:enabled {
+    background-color: #007a99;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.checkbox-container {
+    margin: 20px 0;
+}
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Flexbox for Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #00e5ff;
+}
+
+.hero-section {
+    background: url('./assets/point_back.png') no-repeat center;
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: 48px;
+    color: white;
+}
+
+.hero-description {
+    margin: 20px 0;
+    color: white;
+}
+
+/* Responsive Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.feature-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 2px solid #000;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Download Section */
+.download-section {
+    background-image: url('assets/license_back.jpg');
+    background-position: top;
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.btn-download {
+    background-color: #000;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #333;
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-section {
+        height: 400px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .banner {
+        font-size: 12px;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-primary, .btn-download {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

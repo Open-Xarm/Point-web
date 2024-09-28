@@ -1,0 +1,181 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+}
+
+.drawer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.drawer-nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.drawer-header {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.header-title {
+    flex: 1;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+.header-extra {
+    display: flex;
+    align-items: center;
+}
+
+.progress-img,
+.school-logo-img {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+.drawer-content {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #f4f4f4;
+}
+
+.main-content {
+    padding: 16px;
+}
+
+.notification-layout {
+    display: none;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-icon {
+    width: 20px;
+    height: 20px;
+    align-self: flex-end;
+}
+
+.events-list-container {
+    margin: 8px 0;
+    background-color: #f4f4f4;
+}
+
+.empty-event-list {
+    display: none;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+}
+
+.empty-event-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.empty-event-icon {
+    width: 200px;
+    height: 180px;
+    margin-bottom: 16px;
+}
+
+.empty-event-message {
+    color: #4C5768;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.create-event-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.create-event-button {
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.create-event-button img {
+    width: 50px;
+    height: 50px;
+}
+
+.divider {
+    border: 0.5px solid #ddd;
+    margin: 16px 0;
+}
+
+.bottom-nav {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-bottomnav {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.show-bottomnav img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .drawer-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header-title {
+        margin-bottom: 8px;
+    }
+}

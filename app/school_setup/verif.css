@@ -1,0 +1,96 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.dialog {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.dialog-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.dialog-message {
+    font-size: 16px;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.dialog::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-ottom: 20px solid #fff;
+}
+
+
+.btn-primary {
+    background-color: white;
+    color: black;
+    padding: 14px 40px;
+    border-radius: 0px;
+    border: 2px solid black;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+.btn-primary:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .dialog {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .dialog-title {
+        font-size: 20px;
+    }
+
+    .dialog-message {
+        font-size: 14px;
+    }
+}
